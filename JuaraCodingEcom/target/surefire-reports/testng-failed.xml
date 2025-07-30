@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Swaglabs eCommerce Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Authentication Test(failed)" verbose="0">
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="baseURL" value="https://www.saucedemo.com/v1/index.html"/>
+    <parameter name="username" value="standard_user"/>
+    <classes>
+      <class name="com.juaracoding.ecom.AuthenticationTest">
+        <methods>
+          <include name="loginWithoutPassword"/>
+          <include name="loginTest" invocation-numbers="0 1"/>
+          <include name="loginWithInvalidUsername"/>
+          <include name="loginWithoutUsername"/>
+          <include name="loginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- com.juaracoding.ecom.AuthenticationTest -->
+    </classes>
+  </test> <!-- Authentication Test(failed) -->
+  <test thread-count="5" name="Inventory or Product Test(failed)" verbose="0">
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="baseURL" value="https://www.saucedemo.com/v1/index.html"/>
+    <parameter name="username" value="standard_user"/>
+    <classes>
+      <class name="com.juaracoding.ecom.InventoryTest">
+        <methods>
+          <include name="productDisplayTest"/>
+          <include name="productSortFeatureTest"/>
+        </methods>
+      </class> <!-- com.juaracoding.ecom.InventoryTest -->
+    </classes>
+  </test> <!-- Inventory or Product Test(failed) -->
+</suite> <!-- Failed suite [Swaglabs eCommerce Suite] -->

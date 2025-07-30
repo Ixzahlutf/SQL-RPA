@@ -1,0 +1,5 @@
+com\juaracoding\ecom\BaseTest.class
+com\juaracoding\ecom\InventoryTest.class
+com\juaracoding\ecom\providers\DataTestProvider.class
+com\juaracoding\ecom\PreCondition.class
+com\juaracoding\ecom\AuthenticationTest.class
